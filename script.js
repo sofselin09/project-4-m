@@ -125,11 +125,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // ===== База товаров =====
 const productsDB = [
-    { id: 1, name: 'Вторая сторона', volume: '100 ml', price: 33000, image: 'images/зеленый.PNG' },
+    { id: 1, name: 'Вторая сторона', volume: '100 ml', price: 33000, image: 'images/green.PNG' },
     { id: 2, name: 'Экземпляр', volume: '100 ml', price: 33000, image: 'images/ChatGPT Image 21 июня 2026 г., 22_04_51.png' },
     { id: 3, name: 'Преамбула', volume: '100 ml', price: 33000, image: 'images/ChatGPT Image 21 июня 2026 г., 22_06_13.png' },
     { id: 4, name: 'Скрепа', volume: '100 ml', price: 33000, image: 'images/ChatGPT Image 21 июня 2026 г., 22_08_32.png' },
-    { id: 5, name: 'Подлинник', volume: '100 ml', price: 33000, image: 'images/серый.PNG' },
+    { id: 5, name: 'Подлинник', volume: '100 ml', price: 33000, image: 'images/grey.PNG' },
     { id: 6, name: 'Сэт из 5 ароматов', volume: '2 аромата + пробники', price: 55000, image: 'images/сэт.PNG' }
 ];
 

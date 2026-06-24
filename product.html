@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мероприятия — Signum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html" class="nav-logo">Signum</a>
+        <ul class="nav-links">
+            <li><a href="perception.html">О бренде</a></li>
+            <li><a href="collection.html">Язык ароматов</a></li>
+            <li><a href="product.html" class="active">Мероприятия</a></li>
+            <li><a href="contact.html">Поддержка</a></li>
+        </ul>
+    <div class="nav-cart">
+        <a href="cart.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+<!-- Секция мероприятий -->
+<section class="events-section" id="events">
+    <div class="events-grid">
+        <div class="event-card">
+            <div class="event-image">
+                <img src="images/Frame 42.png" alt="Мероприятие 1">
+            </div>
+            <div class="event-number">01</div>
+            <h3>Цикл лекций</h3>
+            <p class="event-date">04/06/2026</p>
+        </div>
+
+        <div class="event-card">
+            <div class="event-image">
+                <img src="images/Frame 35.png" alt="Мероприятие 2">
+            </div>
+            <div class="event-number">02</div>
+            <h3>Встреча закрытого клуба</h3>
+            <p class="event-date">09/06/2026</p>
+        </div>
+
+        <div class="event-card">
+            <div class="event-image">
+                <img src="images/Frame 16.png" alt="Мероприятие 3">
+            </div>
+            <div class="event-number">03</div>
+            <h3>Экскурсия</h3>
+            <p class="event-date">07/07/2027</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Секция следующего запуска -->
+    <section class="launch-section" id="launch">
+    <div class="launch-content">
+        <div class="launch-image">
+            <img src="images/Frame 39.png" alt="Секретный аромат">
+        </div>
+        <div class="launch-info">
+            <div class="launch-label">СЛЕДУЮЩИЙ ЗАПУСК</div>
+            <h2>Секретный аромат</h2>
+            <p class="launch-date">21 января 2027</p>
+            <p class="launch-description">Скрытый механизм бренда — сложный и насыщенный аромат, созданный как кульминация всей коллекции.
+            Ноты: дымный кардамон, редкий уд, ирис, серая амбра, тёмный мускус.</p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Signum</h3>
+                <p>Нишевая парфюмерия для тех, кто знает, что ищет.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Коллекция</h4>
+                <ul>
+                    <li><a href="collection.html#collection">Все ароматы</a></li>
+                    <li><a href="collection.html#set">Сэт из 5 ароматов</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Афиша</h4>
+                <ul>
+                    <li><a href="product.html#events">Ивенты</a></li>
+                    <li><a href="product.html#launch">Запуски новых энергий</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Клиентам</h4>
+                <ul>
+                    <li><a href="contact.html">Консультация</a></li>
+                    <li><a href="contact.html">Доставка и возврат</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Софи Селин</span>
+            <span>2026</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

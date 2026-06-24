@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина — Signum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html" class="nav-logo">Signum</a>
+        <ul class="nav-links">
+            <li><a href="perception.html">О бренде</a></li>
+            <li><a href="collection.html">Язык ароматов</a></li>
+            <li><a href="product.html">Мероприятия</a></li>
+            <li><a href="contact.html">Поддержка</a></li>
+        </ul>
+        <div class="nav-cart">
+            <a href="cart.html">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+            </a>
+        </div>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Секция корзины -->
+    <section class="cart-section">
+        <h1>Корзина</h1>
+
+        <div class="cart-content" id="cartContent">
+            <!-- Заполняется через JS -->
+        </div>
+
+        <!-- Пустая корзина (скрыта по умолчанию) -->
+        <div class="cart-empty" id="cartEmpty" style="display: none;">
+            <h2>Ваша корзина пуста</h2>
+            <p>Добавьте ароматы из коллекции, чтобы оформить заказ.</p>
+            <a href="collection.html" class="btn-primary">Перейти к коллекции</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Signum</h3>
+                <p>Нишевая парфюмерия для тех, кто знает, что ищет.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Коллекция</h4>
+                <ul>
+                    <li><a href="collection.html#collection">Все ароматы</a></li>
+                    <li><a href="collection.html#set">Сэт из 5 ароматов</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Афиша</h4>
+                <ul>
+                    <li><a href="product.html#events">Ивенты</a></li>
+                    <li><a href="product.html#launch">Запуски новых энергий</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Клиентам</h4>
+                <ul>
+                    <li><a href="contact.html">Консультация</a></li>
+                    <li><a href="contact.html">Доставка и возврат</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Софи Селин</span>
+            <span>2026</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

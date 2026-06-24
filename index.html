@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signum — Нишевая парфюмерия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <nav>
+        <a href="index.html" class="nav-logo">Signum</a>
+        <ul class="nav-links">
+            <li><a href="perception.html">О бренде</a></li>
+            <li><a href="collection.html">Язык ароматов</a></li>
+            <li><a href="product.html">Мероприятия</a></li>
+            <li><a href="contact.html">Поддержка</a></li>
+        </ul>
+    <div class="nav-cart">
+        <a href="cart.html">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 01-8 0" />
+            </svg>
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero секция с анимированной надписью -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="signature-section">
+            <div class="signature-wrapper" id="signatureWrapper">
+                <img src="images/signature.svg" alt="Signum" class="signature-image" id="signatureImage">
+            </div>
+            <div class="signature-line"></div>
+        </div>
+
+        <div class="hero-text-section">
+            <h1 class="hero-title">Деталь, которую<br>невозможно подделать</h1>
+        </div>
+    </div>
+
+    <div class="hero-subtitle-wrapper">
+        <p class="hero-subtitle">Нишевая парфюмерия для тех,<br>кто знает, что ищет.</p>
+    </div>
+</section>
+
+    <!-- Секция манифеста -->
+    <section class="manifest">
+        <div class="manifest-left">
+            <div class="manifest-item">
+                <div class="manifest-number">01</div>
+                <h3>Нейроассоциация</h3>
+                <p>Обонятельная система напрямую связана с лимбической — зоной мозга, отвечающей за эмоции и память.</p>
+            </div>
+            <div class="manifest-item">
+                <div class="manifest-number">02</div>
+                <h3>Социальный сигнал</h3>
+                <p>Правильно подобранный аромат формирует устойчивое первое впечатление у окружающих.</p>
+            </div>
+            <div class="manifest-item">
+                <div class="manifest-number">03</div>
+                <h3>Ваш архетип</h3>
+                <p>Каждый аромат соответствует роли: лидер, визионер, дипломат, эксперт.</p>
+            </div>
+        </div>
+        <div class="manifest-right">
+            <div class="manifest-label">МАНИФЕСТ И ФИЛОСОФИЯ</div>
+            <div class="manifest-quote">«Запах — единственное чувство, которое напрямую связано с памятью и эмоцией».
+            </div>
+            <div class="manifest-highlight">Деловой человек управляет впечатлением. Костюм, темп речи, выбор слов — всё
+                это сигналы. Аромат — последний, самый глубокий из них.</div>
+            <div class="manifest-description">Наши парфюмы разработаны совместно с нейропсихологами. Каждый аромат
+                активирует конкретную ассоциативную реакцию: доверие, авторитет, уверенность.</div>
+        </div>
+    </section>
+
+    <!-- Секция продукта -->
+    <section class="product-showcase">
+        <img src="images/product-main.jpg" alt="Signum парфюм" class="product-image">
+    </section>
+
+    <!-- Секция трёх вопросов -->
+    <section class="questions">
+        <h2>Три вопроса, которые определяют правильный аромат</h2>
+        <p class="questions-intro">Выбор аромата для деловых людей — это не вопрос вкуса. Это вопрос стратегии.
+            Плакат-гид систематизирует выбор через призму ситуации, аудитории и желаемого эффекта.</p>
+
+        <div class="questions-grid">
+            <div class="question-item">
+                <div class="question-number">01</div>
+                <h3>Какова ситуация?</h3>
+                <p>Определите контекст: переговоры, презентация, нетворкинг или камерная встреча</p>
+            </div>
+            <div class="question-item">
+                <div class="question-number">02</div>
+                <h3>Кто аудитория?</h3>
+                <p>Партнёры, клиенты, инвесторы или команда — каждая группа реагирует иначе</p>
+            </div>
+            <div class="question-item">
+                <div class="question-number">03</div>
+                <h3>Каков эффект?</h3>
+                <p>Авторитет, доверие, энергия или запоминаемость — выберите одно главное</p>
+            </div>
+        </div>
+
+        <div class="questions-buttons">
+            <button class="btn-outline" id="watchOnlineBtn">Смотреть онлайн →</button>
+            <div class="dropdown-menu" id="dropdownMenu">
+            <a href="https://sofselin09.github.io/ChargeHub/?clckid=921806be" target="_blank"
+                class="dropdown-item">Информация</a>
+            <a href="https://sofselin09.github.io/Project---3/?clckid=861b8ec7" target="_blank" class="dropdown-item">Выбор
+                аромата</a>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Signum</h3>
+                <p>Нишевая парфюмерия для тех, кто знает, что ищет.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Коллекция</h4>
+                <ul>
+                    <li><a href="collection.html#collection">Все ароматы</a></li>
+                    <li><a href="collection.html#set">Сэт из 5 ароматов</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Афиша</h4>
+                <ul>
+                    <li><a href="product.html#events">Ивенты</a></li>
+                    <li><a href="product.html#launch">Запуски новых энергий</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Клиентам</h4>
+                <ul>
+                    <li><a href="contact.html">Консультация</a></li>
+                    <li><a href="contact.html">Доставка и возврат</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>Софи Селин</span>
+            <span>2026</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

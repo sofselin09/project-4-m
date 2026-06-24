@@ -1,0 +1,2209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #000;
+    background: #fff;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero секция */
+.hero-title {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+    /* Добавляем визуальное утолщение */
+    -webkit-text-stroke: 0.3px #000;
+    text-shadow:
+        0.5px 0 0 #000,
+        -0.5px 0 0 #000,
+        0 0.5px 0 #000,
+        0 -0.5px 0 #000;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 350px;
+}
+
+/* Навигация */
+.nav-logo {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.nav-links a {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Секция манифеста */
+.manifest-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.manifest-right .manifest-label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.manifest-right .manifest-quote {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.manifest-right .manifest-highlight {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+/* Секция вопросов */
+.questions h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.question-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* Футер */
+.footer-brand h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.footer-column h4 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Hero секция */
+.hero-title {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 350px;
+}
+
+/* Навигация */
+.nav-logo {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.95rem;
+}
+
+/* Секция манифеста */
+.manifest-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.manifest-right .manifest-label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.manifest-right .manifest-quote {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+.manifest-right .manifest-highlight {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+/* Секция вопросов */
+.questions h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.question-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+/* Футер */
+.footer-brand h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+}
+
+.footer-column h4 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+.nav-cart a {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav-cart svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hero секция */
+.hero {
+    padding: 7rem 3rem 4rem;
+    min-height: auto;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.signature-section {
+    flex: 1;
+    width: 100%;
+    position: relative;
+}
+
+.signature-wrapper {
+    width: 100%;
+    max-width: none;
+    position: relative;
+    overflow: visible;
+}
+
+.signature-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    clip-path: inset(0 100% 0 0);
+}
+
+.signature-line {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin-top: -10rem;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease;
+}
+
+.signature-line.visible {
+    transform: scaleX(1);
+}
+
+.hero-text-section {
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    max-width: 350px;
+    text-align: left;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.hero-subtitle-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 7rem;
+    padding-left: calc(72% + 3rem);
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 350px;
+}
+
+/* Секция манифеста */
+.manifest {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.manifest-left {
+    border-right: 1px solid #000;
+    padding-right: 2rem;
+}
+
+.manifest-item {
+    margin-bottom: 2.5rem;
+}
+
+.manifest-number {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.manifest-item h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.manifest-item p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.manifest-right .manifest-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.manifest-right .manifest-quote {
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+}
+
+.manifest-right .manifest-highlight {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.manifest-right .manifest-description {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+
+/* Секция продукта */
+.product-showcase {
+    background: #c8c8c8;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: none;
+}
+
+/* Секция вопросов */
+.questions {
+    padding: 6rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.questions h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.questions-intro {
+    font-size: 1rem;
+    color: #333;
+    max-width: 700px;
+    margin-bottom: 4rem;
+}
+
+.questions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.question-item {
+    border-left: 1px solid #000;
+    padding-left: 1.5rem;
+}
+
+.question-number {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.question-item h3 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.question-item p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background: #000;
+    color: #fff;
+}
+
+.questions-buttons {
+    position: relative;
+    display: inline-block;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s;
+    background: #fff;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-outline:hover {
+    background: #000;
+    color: #fff;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    background: #fff;
+    border: 1px solid #000;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: background 0.3s;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: #f5f5f5;
+}
+
+/* Футер */
+footer {
+    padding: 4rem 3rem 2rem;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-brand h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer-column h4 {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-column ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s;
+}
+
+.footer-column ul li a:hover {
+    opacity: 0.6;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: none;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Адаптивность */
+/* ===== Бургер ===== */
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1001;
+}
+
+.burger span {
+    width: 24px;
+    height: 1px;
+    background: #000;
+}
+
+
+/* ===== Планшеты ===== */
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding: 2rem;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .signature-section {
+        max-width: 100%;
+    }
+
+    .manifest {
+        grid-template-columns: 1fr;
+    }
+
+    .manifest-left {
+        border-right: none;
+        border-bottom: 1px solid #000;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .questions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* ===== Телефоны ===== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        position: relative;
+        padding: 1rem 1.5rem;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    /* мобильное меню */
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        background: #fff;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 30px 0;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .3s;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .hero {
+        padding: 1rem 20px 4rem;
+        min-height: auto;
+    }
+
+    .signature-wrapper {
+        margin-top: 100px;
+    }
+
+    .signature-line {
+        margin-top: -4rem;
+    }
+
+    .hero-text-section {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle-wrapper {
+        justify-content: flex-start;
+    }
+
+    .hero,
+    .manifest,
+    .questions,
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .manifest {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .manifest-right .manifest-quote {
+        font-size: 1.5rem;
+    }
+
+    .manifest-right .manifest-highlight {
+        font-size: 1.2rem;
+    }
+
+    .questions {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .questions h2 {
+        font-size: 1.9rem;
+    }
+
+    .question-item {
+        border-left: none;
+        border-top: 1px solid #000;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+/* ===== Маленькие телефоны ===== */
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .questions h2 {
+        font-size: 1.5rem;
+    }
+
+    .manifest-right .manifest-quote {
+        font-size: 1.2rem;
+    }
+
+    .manifest-right .manifest-highlight {
+        font-size: 1rem;
+    }
+
+    .signature-image {
+        width: 100%;
+    }
+
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+/* ===== Страница "О бренде" (perception.html) ===== */
+
+/* Секция 1: Hero */
+.brand-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.brand-hero-content h1 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.brand-hero-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 400px;
+}
+
+.brand-hero-image .image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #d8d8d8;
+}
+
+.brand-hero-image img,
+.process-image img,
+.energy-image img,
+.energy-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.brand-hero-image img {
+    height: 400px;
+}
+
+.process-image img {
+    height: 300px;
+}
+
+.energy-image img {
+    height: 400px;
+}
+
+.energy-card-image img {
+    height: 250px;
+}
+
+/* Секция 2: Процесс */
+.brand-process {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.brand-process h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.process-item .process-image {
+    margin-bottom: 1.5rem;
+}
+
+.process-image .image-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #d8d8d8;
+}
+
+.process-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.process-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.process-item p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Секция 3: Энергия */
+.brand-energy {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.brand-energy h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.energy-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.energy-image .image-placeholder {
+    width: 100%;
+    height: 400px;
+    background: #d8d8d8;
+}
+
+.energy-content h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.energy-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.energy-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.energy-card-image .image-placeholder {
+    width: 100%;
+    height: 250px;
+    background: #d8d8d8;
+    margin-bottom: 1rem;
+}
+
+.energy-card-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.energy-card h4 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.energy-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.energy-card {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+
+.energy-card:hover {
+    opacity: 0.7;
+}
+
+/* Обводка для обложек книг */
+.energy-image img,
+.energy-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #e0e0e0;
+    /* легкая серая обводка */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.energy-image-link:hover img,
+.energy-card:hover img {
+    transform: translateY(-5px);
+    border-color: #c0c0c0;
+    /* обводка чуть темнее при наведении */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Мобильный адаптив для perception */
+@media (max-width: 768px) {
+    .brand-hero {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+    }
+
+    .brand-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .brand-process,
+    .brand-energy {
+        padding: 3rem 1.5rem;
+    }
+
+    .brand-process h2,
+    .brand-energy h2 {
+        font-size: 1.8rem;
+    }
+
+    .process-grid,
+    .energy-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .energy-main {
+        grid-template-columns: 1fr;
+    }
+
+    .energy-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ===== Страница "Язык ароматов" (collection.html) ===== */
+
+/* Секция ольфакторных профилей */
+.olfactory-section {
+    padding: 2rem 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.olfactory-section h1 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.olfactory-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.olfactory-item {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 2rem;
+}
+
+.olfactory-item:last-child {
+    border-right: none;
+}
+
+.olfactory-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.olfactory-item h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.olfactory-context {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.olfactory-notes {
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.note-row {
+    display: flex;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.note-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    min-width: 80px;
+    color: #333;
+}
+
+.note-value {
+    font-family: 'Inter', sans-serif;
+    color: #666;
+}
+
+.neuro-association {
+    padding-top: 1rem;
+    border-top: none;
+}
+
+.neuro-association h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.neuro-association p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Секция коллекции */
+.collection-section {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.collection-section h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.collection-intro {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.product-card {
+    text-align: left;
+}
+
+.product-image {
+    margin-bottom: 1.5rem;
+}
+
+.product-image .image-placeholder {
+    width: 100%;
+    height: 600px;
+    background: #d8d8d8;
+}
+
+.product-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #e0e0e0;
+}
+
+.product-card h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.product-volume,
+.product-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.btn-buy {
+    width: 100%;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-buy:hover {
+    opacity: 0.8;
+}
+
+/* Секция сэта */
+.set-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.set-content h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.set-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.set-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.set-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.set-image img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #e0e0e0;
+}
+
+/* Ховер на карточки товаров */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover .product-image img {
+    opacity: 0.9;
+}
+
+/* Мобильный адаптив для collection */
+@media (max-width: 768px) {
+
+    .olfactory-section,
+    .collection-section,
+    .set-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .olfactory-section h1 {
+        font-size: 2rem;
+    }
+
+    .olfactory-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .olfactory-item {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .set-section {
+        grid-template-columns: 1fr;
+    }
+
+    .set-image .image-placeholder {
+        height: 300px;
+    }
+}
+
+
+/* ===== Страница "Мероприятия" (product.html) ===== */
+
+/* Секция мероприятий */
+.events-section {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.event-card {
+    text-align: left;
+}
+
+.event-image {
+    margin-bottom: 1.5rem;
+}
+
+.event-image .image-placeholder {
+    width: 100%;
+    height: 600px;
+    background: #d8d8d8;
+}
+
+.event-image img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #e0e0e0;
+}
+
+.event-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.75rem;
+}
+
+.event-card h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.event-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Секция следующего запуска */
+.launch-section {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.launch-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.launch-image .image-placeholder {
+    width: 100%;
+    height: 800px;
+    background: #d8d8d8;
+}
+
+.launch-image img {
+    width: 90%;
+    height: 800px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #e0e0e0;
+}
+
+.launch-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.launch-info h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.launch-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.launch-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Mobile адаптив ===== */
+@media (max-width: 768px) {
+
+    /* Общие отступы */
+    .events-section,
+    .launch-section {
+        padding: 2rem 1.25rem;
+    }
+
+    /* Мероприятия */
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .event-image .image-placeholder,
+    .event-image img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .event-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .event-number,
+    .event-date {
+        font-size: 0.9rem;
+    }
+
+    /* Следующий запуск */
+    .launch-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .launch-image {
+        order: 1;
+    }
+
+    .launch-info {
+        order: 2;
+    }
+
+    .launch-image .image-placeholder,
+    .launch-image img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .launch-info h2 {
+        font-size: 2rem;
+    }
+
+    .launch-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
+
+/* ===== Очень маленькие экраны ===== */
+@media (max-width: 480px) {
+
+    .events-section,
+    .launch-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .event-image .image-placeholder,
+    .event-image img {
+        height: 300px;
+    }
+
+    .launch-image .image-placeholder,
+    .launch-image img {
+        height: 380px;
+    }
+
+    .launch-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .launch-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Страница "Поддержка" (contact.html) ===== */
+
+.contact-section {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+/* Вертикальная линия по центру */
+.contact-content::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #000;
+    transform: translateX(-50%);
+}
+
+.contact-subscribe h1 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.contact-subscribe>p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.subscribe-form label {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.subscribe-form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid #000;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+
+.subscribe-form input::placeholder {
+    color: #999;
+}
+
+.btn-subscribe {
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-subscribe:hover {
+    opacity: 0.8;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-item {
+    border: none;
+    padding: 0;
+}
+
+.contact-icon {
+    margin-bottom: 1.5rem;
+}
+
+.contact-icon svg {
+    stroke: #000;
+}
+
+.contact-item h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-phone,
+.contact-email {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.contact-hours,
+.contact-response {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ===== Планшеты ===== */
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 3rem 2rem;
+    }
+
+    .contact-content {
+        gap: 3rem;
+    }
+
+    .contact-subscribe h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* ===== Мобильные устройства ===== */
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 2rem 1.25rem;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    /* Убираем центральную линию */
+    .contact-content::before {
+        display: none;
+    }
+
+    .contact-subscribe h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-subscribe>p {
+        max-width: none;
+        margin-bottom: 1.5rem;
+    }
+
+    .subscribe-form input {
+        width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+    }
+
+    .btn-subscribe {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-phone,
+    .contact-email {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Маленькие телефоны ===== */
+@media (max-width: 480px) {
+
+    .contact-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-subscribe h1 {
+        font-size: 1.7rem;
+        line-height: 1.2;
+    }
+
+    .contact-subscribe>p,
+    .contact-hours,
+    .contact-response {
+        font-size: 0.9rem;
+    }
+
+    .contact-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-phone,
+    .contact-email {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+
+    .subscribe-form input {
+        padding: 0.9rem;
+    }
+}
+
+/* ===== Страница 404 ===== */
+
+.error-page {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.error-code {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 12rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.error-title {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.error-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 500px;
+}
+
+.btn-error {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    transition: opacity 0.3s;
+}
+
+.btn-error:hover {
+    opacity: 0.8;
+}
+
+/* Адаптив для 404 */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 8rem;
+    }
+
+    .error-title {
+        font-size: 2rem;
+    }
+
+    .error-description {
+        font-size: 1rem;
+    }
+}
+
+/* ===== Страница "Корзина" (cart.html) ===== */
+
+.cart-section {
+    padding: 4rem 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+.cart-section h1 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.cart-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    align-items: center;
+}
+
+.cart-item-image {
+    width: 120px;
+    height: 120px;
+    background: #d8d8d8;
+    overflow: hidden;
+}
+
+.cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #e0e0e0;
+}
+
+.cart-item-info h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cart-item-volume {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.quantity-control button {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quantity-control button:hover {
+    background: #f0f0f0;
+}
+
+.quantity-control .quantity {
+    width: 50px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    height: 36px;
+    line-height: 36px;
+}
+
+.cart-item-price {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: right;
+    min-width: 100px;
+}
+
+.cart-item-remove {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.cart-item-remove:hover {
+    color: #000;
+}
+
+/* Итог корзины */
+.cart-summary {
+    border: 1px solid #000;
+    padding: 2rem;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.cart-summary h3 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+}
+
+.summary-row.total {
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.btn-checkout {
+    width: 100%;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-top: 1.5rem;
+}
+
+.btn-checkout:hover {
+    opacity: 0.8;
+}
+
+/* Пустая корзина */
+.cart-empty {
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.cart-empty h2 {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cart-empty p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: opacity 0.3s;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.nav-cart a {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: #000;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Планшеты ===== */
+@media (max-width: 1024px) {
+
+    .cart-section {
+        padding: 3rem 2rem;
+    }
+
+    .cart-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .cart-summary {
+        position: static;
+        order: 2;
+    }
+}
+
+/* ===== Мобильные устройства ===== */
+@media (max-width: 768px) {
+
+    .cart-section {
+        padding: 2rem 1.25rem;
+    }
+
+    .cart-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .cart-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cart-item {
+        grid-template-columns: 90px 1fr;
+        gap: 1rem;
+        align-items: start;
+        position: relative;
+        padding: 1.5rem 0;
+    }
+
+    .cart-item-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cart-item-price {
+        text-align: left;
+        min-width: auto;
+        margin-top: 1rem;
+    }
+
+    .cart-item-controls {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .cart-item-remove {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        padding: 0;
+    }
+
+    .cart-item-info h3 {
+        font-size: 1.1rem;
+        padding-right: 2rem;
+    }
+
+    .cart-summary {
+        position: static;
+        padding: 1.5rem;
+    }
+
+    .cart-summary h3 {
+        font-size: 1.3rem;
+    }
+
+    .btn-checkout {
+        padding: 1rem;
+    }
+}
+
+/* ===== Маленькие телефоны ===== */
+@media (max-width: 480px) {
+
+    .cart-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .cart-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+    }
+
+    .cart-item-image {
+        width: 100%;
+        height: 280px;
+    }
+
+    .cart-item-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cart-item-info h3 {
+        font-size: 1.05rem;
+        padding-right: 2rem;
+    }
+
+    .cart-item-controls {
+        justify-content: flex-start;
+    }
+
+    .quantity-control {
+        width: fit-content;
+    }
+
+    .summary-row {
+        font-size: 0.9rem;
+    }
+
+    .summary-row.total {
+        font-size: 1rem;
+    }
+
+    .cart-empty {
+        padding: 4rem 1rem;
+    }
+
+    .cart-empty h2 {
+        font-size: 1.6rem;
+    }
+
+    .btn-primary,
+    .btn-checkout {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+

@@ -19,7 +19,7 @@
         <ul class="nav-links">
             <li><a href="perception.html">О бренде</a></li>
             <li><a href="collection.html">Язык ароматов</a></li>
-            <li><a href="product.html">Мероприятия</a></li>
+            <li><a href="product.html" class="active">Мероприятия</a></li>
             <li><a href="contact.html">Поддержка</a></li>
         </ul>
         <div class="nav-cart">
@@ -30,15 +30,17 @@
                     <line x1="3" y1="6" x2="21" y2="6" />
                     <path d="M16 10a4 4 0 01-8 0" />
                 </svg>
+                <span class="cart-count" id="cartCount">0</span>
             </a>
         </div>
-        <button class="burger">
+        <button class="burger" id="burgerBtn" aria-label="Меню">
             <span></span>
             <span></span>
             <span></span>
         </button>
     </nav>
-
+    
+    <!-- Мобильное меню -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
             <li><a href="perception.html">О бренде</a></li>

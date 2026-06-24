@@ -2233,13 +2233,13 @@ footer {
 }
 
 
-
 @media (max-width: 768px) {
-    .burger {
-        display: flex;
-    }
 
     .nav-links {
-        display: none;
+        display: none !important;
+    }
+
+    .burger {
+        display: flex !important;
     }
 }

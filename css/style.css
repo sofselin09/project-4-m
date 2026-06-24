@@ -2232,6 +2232,13 @@ footer {
     transform: translateY(-9px) rotate(-45deg);
 }
 
+/* Скрываем обычное меню на мобильных */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none !important;
+    }
+}
+
 @media (max-width: 768px) {
     .burger {
         display: flex;

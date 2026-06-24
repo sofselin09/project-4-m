@@ -583,25 +583,6 @@ footer {
     color: #666;
 }
 
-/* Адаптивность */
-/* ===== Бургер ===== */
-
-.burger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-    z-index: 1001;
-}
-
-.burger span {
-    width: 24px;
-    height: 1px;
-    background: #000;
-}
-
 
 /* ===== Планшеты ===== */
 
@@ -666,32 +647,6 @@ footer {
 
     /* мобильное меню */
 
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-        background: #fff;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        padding: 30px 0;
-
-        opacity: 0;
-        visibility: hidden;
-
-        transition: .3s;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        opacity: 1;
-        visibility: visible;
-    }
 
     .hero {
         padding: 1rem 20px 4rem;
@@ -2206,7 +2161,8 @@ footer {
     }
 }
 
-/* Бургер-кнопка — скрыта по умолчанию */
+/* ===== Мобильное меню ===== */
+
 .burger {
     display: none;
     flex-direction: column;
@@ -2228,20 +2184,57 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* На больших экранах показываем меню, скрываем бургер */
-.nav-links {
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
 }
 
-/* На маленьких экранах */
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 2rem;
+}
+
+.mobile-menu ul li a {
+    font-family: 'Gentium Plus', Georgia, serif;
+    font-size: 2rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.burger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 @media (max-width: 768px) {
     .burger {
         display: flex;
-        /* показываем бургер */
-    }
-
-    .nav-links {
-        display: none;
-        /* скрываем обычное меню */
     }
 }

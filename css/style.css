@@ -657,7 +657,7 @@ footer {
     }
 
     .signature-line {
-        margin-top: -4rem;
+        margin-top: -1.5rem;
     }
 
     .hero-text-section {
@@ -668,8 +668,15 @@ footer {
         font-size: 1.8rem;
     }
 
-    .hero-subtitle-wrapper {
-        justify-content: flex-start;
+     .hero-subtitle-wrapper {
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .hero-subtitle {
+        max-width: 280px;
+        text-align: left;
+        line-height: 1.5;
     }
 
     .hero,
